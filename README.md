@@ -34,6 +34,7 @@ LevelUp, oyuncular ve sosyal medya meraklıları için tasarlanmış bir web uyg
    ```bash
    npm install
    
-3.Uygulamayı başlatın:
+3. Frontend ve backend klasörlerine girip bağımlılıkları yükleyin:
    ```bash
    npm run dev
+   
