@@ -37,4 +37,17 @@ LevelUp, oyuncular ve sosyal medya meraklıları için tasarlanmış bir web uyg
 3. Frontend ve backend klasörlerine girip bağımlılıkları yükleyin:
    ```bash
    npm run dev
+
+# 🎨 LevelUp! Renk Paleti
+
+| Renk Adı           | Hex Kodu   | Kullanım Önerisi                                      |
+|-------------------|-----------|------------------------------------------------------|
+| **Ana Renk / Accent** | #FF6F61  | Logo, butonlar, vurgu metinleri, hover efektleri    |
+| **İkincil Renk**      | #4A90E2  | Başlıklar, linkler, ikonlar                         |
+| **Arka Plan Açık**    | #F5F5F5  | Tüm sayfa arka planı, kart arka planları            |
+| **Arka Plan Koyu**    | #1C1C1C  | Footer, header veya koyu temalı bölümler            |
+| **Metin Renk Açık**   | #333333  | Ana metinler                                        |
+| **Metin Renk Koyu**   | #FFFFFF  | Koyu arka planlı alanlardaki metinler              |
+| **Vurgu / Özel**      | #FFD700  | Ödül, skor, özel butonlar, hover efektleri         |
+
    
