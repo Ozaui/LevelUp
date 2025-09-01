@@ -29,3 +29,11 @@ LevelUp, oyuncular ve sosyal medya meraklıları için tasarlanmış bir web uyg
 1. Depoyu klonlayın:  
    ```bash
    git clone https://github.com/kullaniciAdi/levelUp.git
+
+2. Frontend ve backend klasörlerine girip bağımlılıkları yükleyin:
+   ```bash
+   npm install
+   
+3.Uygulamayı başlatın:
+   ```bash
+   npm run dev
