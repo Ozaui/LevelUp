@@ -1,10 +1,10 @@
 import "./App.css";
-import User from "./pages/User";
+import MainPage from "./pages/MainPage.jsx";
 
 function App() {
   return (
     <>
-      <User />
+      <MainPage />
     </>
   );
 }
