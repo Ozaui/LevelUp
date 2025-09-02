@@ -1,14 +1,16 @@
 import styles from "../styles/components/Header.module.css";
 import logo from "../assets/Logo.png";
 import Badge from "@mui/material/Badge";
-import { IoHomeOutline } from "react-icons/io5";
-import { IoSearch } from "react-icons/io5";
-import { IoNotificationsOutline } from "react-icons/io5";
-import { IoPersonOutline } from "react-icons/io5";
-import { IoGameControllerOutline } from "react-icons/io5";
-import { IoSettingsOutline } from "react-icons/io5";
-import { IoLocateOutline } from "react-icons/io5";
-import { IoPeopleOutline } from "react-icons/io5";
+import {
+  IoHomeOutline,
+  IoSearch,
+  IoNotificationsOutline,
+  IoPersonOutline,
+  IoGameControllerOutline,
+  IoSettingsOutline,
+  IoLocateOutline,
+  IoPeopleOutline,
+} from "react-icons/io5";
 import { IoIosMenu } from "react-icons/io";
 import { useState } from "react";
 

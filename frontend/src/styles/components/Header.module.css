@@ -4,11 +4,11 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  min-height: 60vh;
+  height: auto;
   padding: 20px;
   gap: 20px;
   width: 100px;
-  height: auto;
+  max-height: 80vh;
   margin: 20px 0 0 20px;
 
   /* Design */

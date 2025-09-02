@@ -1,10 +1,12 @@
-import Avatar from "@mui/material/Avatar";
 import style from "../styles/components/MainArea.module.css";
+import NewPost from "./mainArea/NewPost";
 
-export const MainArea = () => {
+const MainArea = () => {
   return (
     <div className={style.MainArea}>
-      <Avatar alt="Remy Sharp" src="" />
+      <NewPost />
     </div>
   );
 };
+
+export default MainArea;
