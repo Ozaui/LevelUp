@@ -33,47 +33,63 @@ header button {
   height: auto;
 }
 .visiblityButton {
-  display: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
   margin: 20px 0 0 20px;
   width: 50px;
   height: 50px;
-  background-color: #4a90e2;
-  border-radius: 5px;
+  background: linear-gradient(135deg, #4a90e2, #50a0ff);
+  border-radius: 12px;
   border: none;
   cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 18px;
 }
+
+.menuCloseButton {
+  background: transparent;
+  color: inherit;
+}
+
 .visiblityButton:hover {
-  background-color: #3b7ac6;
-  transform: scale(1.05);
+  background: linear-gradient(135deg, #3b7ac6, #4d8cff);
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
+
 .visiblityButton:active {
-  background-color: #2e65a0;
+  background: linear-gradient(135deg, #2e65a0, #3a7cd6);
   transform: scale(0.95);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Tablet */
 @media (max-width: 1024px) {
-  header {
-    display: none;
-  }
-  .visiblityButton {
-    display: block;
-  }
   .logo {
     width: 80px;
+  }
+  .visiblityButton {
+    width: 46px;
+    height: 46px;
+    margin: 16px 0 0 16px;
+    border-radius: 12px;
   }
 }
 
 /* Mobil */
 @media (max-width: 768px) {
-  header {
-    display: none;
+  .logo {
+    width: 70px;
   }
   .visiblityButton {
-    display: block;
-  }
-  .logo {
-    width: 80px;
+    width: 40px;
+    height: 40px;
+    margin: 12px 0 0 12px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 }

@@ -10,77 +10,98 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { IoLocateOutline } from "react-icons/io5";
 import { IoPeopleOutline } from "react-icons/io5";
 import { IoIosMenu } from "react-icons/io";
+import { useState } from "react";
 
 const Header = () => {
+  const [menuVisible, setmenuVisible] = useState(false);
   return (
     <>
-      <button className={styles.visiblityButton}>
-        {" "}
-        <IoIosMenu size={24} />
-      </button>
-      <header>
-        {/* Logo */}
-        <img
-          className={styles.logo}
-          src={logo}
-          alt="LevelUp! Logo"
-          title="LevelUp!"
-        />
+      {!menuVisible && (
+        <button
+          className={styles.visiblityButton}
+          onClick={() => setmenuVisible(true)}
+          aria-pressed={menuVisible}
+          aria-label="Open menu"
+          title="Open menu"
+        >
+          {" "}
+          <IoIosMenu size={24} />
+        </button>
+      )}
 
-        {/* Main Page Button */}
-        <button title="Main Page">
-          <Badge
-            className={styles.icon}
-            badgeContent={1}
-            color="primary"
-            variant="dot"
+      {menuVisible && (
+        <header>
+          {/* Logo */}
+          <img
+            className={styles.logo}
+            src={logo}
+            alt="LevelUp! Logo"
+            title="LevelUp!"
+          />
+          <button
+            className={styles.menuCloseButton}
+            onClick={() => setmenuVisible(false)}
+            aria-label="Close menu"
+            title="Close menu"
           >
-            <IoHomeOutline size={24} />
-          </Badge>
-        </button>
+            <IoIosMenu size={20} />
+          </button>
 
-        {/* Search Button */}
-        <button title="Search">
-          <IoSearch className={styles.icon} size={24} />
-        </button>
+          {/* Main Page Button */}
+          <button title="Main Page">
+            <Badge
+              className={styles.icon}
+              badgeContent={1}
+              color="primary"
+              variant="dot"
+            >
+              <IoHomeOutline size={24} />
+            </Badge>
+          </button>
 
-        {/* Notification Button */}
-        <button title="Notification">
-          <Badge
-            className={styles.icon}
-            badgeContent={1}
-            color="primary"
-            variant="dot"
-          >
-            <IoNotificationsOutline size={24} />
-          </Badge>
-        </button>
+          {/* Search Button */}
+          <button title="Search">
+            <IoSearch className={styles.icon} size={24} />
+          </button>
 
-        {/* Create Post Button */}
-        <button title="Write a New Post">
-          <IoLocateOutline className={styles.icon} size={24} />
-        </button>
+          {/* Notification Button */}
+          <button title="Notification">
+            <Badge
+              className={styles.icon}
+              badgeContent={1}
+              color="primary"
+              variant="dot"
+            >
+              <IoNotificationsOutline size={24} />
+            </Badge>
+          </button>
 
-        {/* Frineds Button */}
-        <button title="Frinends">
-          <IoPeopleOutline className={styles.icon} size={24} />
-        </button>
+          {/* Create Post Button */}
+          <button title="Write a New Post">
+            <IoLocateOutline className={styles.icon} size={24} />
+          </button>
 
-        {/* Game Review  Button */}
-        <button title="Write a New Game Review">
-          <IoGameControllerOutline className={styles.icon} size={24} />
-        </button>
+          {/* Frineds Button */}
+          <button title="Frinends">
+            <IoPeopleOutline className={styles.icon} size={24} />
+          </button>
 
-        {/* Profile  Button */}
-        <button title="Profile">
-          <IoPersonOutline className={styles.icon} size={24} />
-        </button>
+          {/* Game Review  Button */}
+          <button title="Write a New Game Review">
+            <IoGameControllerOutline className={styles.icon} size={24} />
+          </button>
 
-        {/* Setting   Button */}
-        <button title="Settings">
-          <IoSettingsOutline className={styles.icon} size={24} />
-        </button>
-      </header>
+          {/* Profile  Button */}
+          <button title="Profile">
+            <IoPersonOutline className={styles.icon} size={24} />
+          </button>
+
+          {/* Setting   Button */}
+          <button title="Settings">
+            <IoSettingsOutline className={styles.icon} size={24} />
+          </button>
+        </header>
+      )}
     </>
   );
 };
