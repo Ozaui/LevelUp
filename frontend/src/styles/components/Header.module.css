@@ -9,11 +9,14 @@ header {
   gap: 20px;
   width: 100px;
   max-height: 80vh;
-  margin: 20px 0 0 20px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
 
   /* Design */
   border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 40px;
+  border-radius: 20px;
 }
 
 header button {
@@ -36,8 +39,11 @@ header button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  margin: 20px 0 0 20px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  margin: 0;
+  z-index: 1100;
   width: 50px;
   height: 50px;
   background: linear-gradient(135deg, #4a90e2, #50a0ff);
@@ -75,7 +81,7 @@ header button {
   .visiblityButton {
     width: 46px;
     height: 46px;
-    margin: 16px 0 0 16px;
+    margin: 0;
     border-radius: 12px;
   }
 }
@@ -88,7 +94,7 @@ header button {
   .visiblityButton {
     width: 40px;
     height: 40px;
-    margin: 12px 0 0 12px;
+    margin: 0;
     border-radius: 10px;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }

@@ -14,8 +14,7 @@ import {
 import { IoIosMenu } from "react-icons/io";
 import { useState } from "react";
 
-const Header = () => {
-  const [menuVisible, setmenuVisible] = useState(false);
+const Header = ({ menuVisible, setmenuVisible }) => {
   return (
     <>
       {!menuVisible && (

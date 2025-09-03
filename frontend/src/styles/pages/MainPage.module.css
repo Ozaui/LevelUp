@@ -3,4 +3,13 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  transition: padding-left 200ms ease;
+}
+
+.WithSidebar {
+  padding-left: 160px; /* header width (100) + left offset (20) + larger gap */
+}
+
+.NoSidebar {
+  padding-left: 90px; /* reserve space for visibility button (50) + offsets */
 }
