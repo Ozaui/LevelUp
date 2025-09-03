@@ -5,6 +5,7 @@ const MainArea = () => {
   return (
     <div className={style.MainArea}>
       <NewPost />
+      <hr className={style.MainAreaHr} />
     </div>
   );
 };
