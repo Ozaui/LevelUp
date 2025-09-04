@@ -7,9 +7,9 @@
 }
 
 .WithSidebar {
-  padding-left: 160px; /* header width (100) + left offset (20) + larger gap */
+  padding-left: 160px;
 }
 
 .NoSidebar {
-  padding-left: 90px; /* reserve space for visibility button (50) + offsets */
+  padding-left: 90px;
 }

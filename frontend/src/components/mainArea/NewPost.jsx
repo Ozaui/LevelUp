@@ -13,7 +13,7 @@ const NewPost = () => {
         initialValues={{ text: "", file: null }}
         validationSchema={newPostSchema}
         onSubmit={(values) =>
-          // Bu kıs ım ile backende gönderim yapıcaz.
+          // Bu kısım ile backende gönderim yapıcaz.
           // Geçici console.log
           console.log(values)
         }
