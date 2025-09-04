@@ -1,17 +1,20 @@
 .MainArea {
-  border: 3px solid rgba(255, 255, 255, 0.6);
+  border: 3px solid rgba(255, 255, 255, 0.2);
   border-bottom: none;
   width: 100%;
   min-height: 100vh;
   margin: 20px 0 0 20px;
   border-radius: 20px 20px 0 0;
   margin-right: 10px;
+  background-color: #1a1a1a;
 }
 
 .Avatar {
   margin-right: 20px;
   width: 50px !important;
   height: 50px !important;
+  border-radius: 50%;
+  border: 2px solid #4a90e2;
 }
 
 .NewPost {
@@ -19,6 +22,8 @@
   flex-direction: row;
   align-items: center;
   padding: 20px;
+  background-color: #2c2c2c;
+  border-radius: 16px;
 }
 
 .NewPostForm {
@@ -31,26 +36,26 @@
   width: calc(100% - 10px);
   min-height: 50px;
   resize: none;
-  line-height: 1;
-  padding: 10px;
-  border-radius: 10px;
+  line-height: 1.2;
+  padding: 12px;
+  border-radius: 12px;
   margin: 10px 0 1px 0;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.08),
-    rgba(255, 255, 255, 0.02)
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.01)
   );
-  color: white;
+  color: #e0e0e0;
   font-size: 14px;
   transition: transform 0.1s ease, background 0.2s ease, border-color 0.2s ease;
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(8px);
 }
 
 .Text:focus {
   outline: none;
-  border-color: rgba(255, 255, 255, 0.6);
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.3);
 }
 
 .FileAndSubmit {
@@ -58,6 +63,7 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
 .UploadGroup {
   display: flex;
   align-items: center;
@@ -78,54 +84,58 @@
 
 .UploadButton {
   margin: 10px 0 1px 0;
-  padding: 8px 14px;
+  padding: 10px 18px;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.08),
-    rgba(255, 255, 255, 0.02)
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.01)
   );
-  color: white;
+  color: #ffffff;
   font-size: 14px;
+  font-weight: 500;
   cursor: pointer;
-  transition: transform 0.1s ease, background 0.2s ease, border-color 0.2s ease;
-  backdrop-filter: blur(6px);
+  transition: transform 0.15s ease, background 0.3s ease, border-color 0.3s ease;
+  backdrop-filter: blur(8px);
 }
 
 .SubmitButton {
   margin: 10px 0 1px 0;
-  padding: 8px 14px;
+  padding: 10px 18px;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.08),
-    rgba(255, 255, 255, 0.02)
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.01)
   );
-  color: white;
+  color: #ffffff;
   font-size: 14px;
+  font-weight: 600;
   cursor: pointer;
-  transition: transform 0.1s ease, background 0.2s ease, border-color 0.2s ease;
-  backdrop-filter: blur(6px);
+  transition: transform 0.15s ease, background 0.3s ease, border-color 0.3s ease;
+  backdrop-filter: blur(8px);
 }
 
-.UploadButton:hover {
-  transform: translateY(-1px);
-  border-color: rgba(255, 255, 255, 0.5);
+.UploadButton:hover,
+.SubmitButton:hover {
+  transform: translateY(-2px);
+  border-color: rgba(74, 144, 226, 0.6);
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.14),
-    rgba(255, 255, 255, 0.04)
+    rgba(74, 144, 226, 0.1),
+    rgba(74, 144, 226, 0.02)
   );
 }
 
-.UploadButton:active {
+.UploadButton:active,
+.SubmitButton:active {
   transform: translateY(0);
 }
 
 .FileName {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.85);
   font-size: 14px;
   max-width: 220px;
   overflow: hidden;
@@ -134,7 +144,7 @@
 }
 
 .MainAreaHr {
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /* Tablet */

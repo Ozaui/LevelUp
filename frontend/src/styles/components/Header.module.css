@@ -15,8 +15,10 @@ header {
   z-index: 1000;
 
   /* Design */
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.15); /* daha soft border */
   border-radius: 20px;
+  background-color: #1c1c1c; /* koyu arka plan */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* hafif gölge */
 }
 
 header button {
@@ -24,6 +26,7 @@ header button {
   border: none;
   cursor: pointer;
   color: inherit;
+  transition: all 0.3s ease;
 }
 
 .icon {
@@ -34,7 +37,9 @@ header button {
 .logo {
   width: 100px;
   height: auto;
+  filter: brightness(0.9); /* biraz koyulaştır */
 }
+
 .visiblityButton {
   display: inline-flex;
   align-items: center;
@@ -50,7 +55,7 @@ header button {
   border-radius: 12px;
   border: none;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
   color: white;
   font-size: 18px;
@@ -62,15 +67,15 @@ header button {
 }
 
 .visiblityButton:hover {
-  background: linear-gradient(135deg, #3b7ac6, #4d8cff);
+  background: linear-gradient(135deg, #357ab8, #4d8cff);
   transform: scale(1.1);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
 }
 
 .visiblityButton:active {
-  background: linear-gradient(135deg, #2e65a0, #3a7cd6);
+  background: linear-gradient(135deg, #2a6391, #3a7cd6);
   transform: scale(0.95);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 /* Tablet */
@@ -81,8 +86,8 @@ header button {
   .visiblityButton {
     width: 46px;
     height: 46px;
-    margin: 0;
     border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -94,8 +99,7 @@ header button {
   .visiblityButton {
     width: 40px;
     height: 40px;
-    margin: 0;
     border-radius: 10px;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
   }
 }
